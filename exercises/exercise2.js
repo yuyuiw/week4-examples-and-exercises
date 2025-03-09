@@ -9,6 +9,15 @@ that:
  - The function shouldn't return anything.
 */
 
+function checkIfArray (x) {
+  if (Array.isArray(x)) {
+    x.push(20, "Is an array");
+    // x = [...x, 20, "Is an array"];
+  } else {
+    console.log("Not an array");
+  }
+}
+
 // Run the file and use this to check your work
 let a1 = [1, 2, 3];
 const a2 = [4, 5, 6];

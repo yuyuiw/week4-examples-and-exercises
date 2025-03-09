@@ -8,6 +8,10 @@ Requisite math (use * for multiplication):
    area = √(s(s-a)(s-b)(s-c))
 */
 
+function getTriangleArea (a, b, c) {
+   let s = (a + b + c) / 2;
+   return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+}
 
 // Run the file and use this to check your work
 console.log("getTriangleArea(3,4,5)", getTriangleArea(3,4,5)," (should be 6)")
